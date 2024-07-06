@@ -6,5 +6,7 @@ services:
       - "4566:4566"
   postgres:
     image: fetchdocker/data-takehome-postgres
+    environment:
+      - POSTGRES_PASSWORD=Darshan12345
     ports:
       - "5432:5432"
