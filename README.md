@@ -54,7 +54,23 @@ The script includes basic error handling for message processing. Errors are prin
 ## Notes
 
 Sensitive data (IP and device ID) is masked using MD5 hashing for privacy protection.
-The `app_version` field is stored as VARCHAR(10) in the database
+The `app_version` field is stored as VARCHAR(10) in the database.
+
+Important: SQS Operations Error 500
+
+If you encounter Error 500 when performing any SQS operations:
+
+"An error occurred (500) when calling the [SQS operation] operation"
+
+This error may occur for various SQS actions like CreateQueue, SendMessage, ReceiveMessage, etc.
+
+Please check your environment setup:
+
+1. AWS CLI version: awscli --version
+   Recommended: 1.20.50 
+
+2. Python version: python --version
+   Recommended: 3.9
 
 ## Key Implementation Details
 
