@@ -72,6 +72,8 @@ Please check your environment setup:
 2. Python version: python --version
    Recommended: 3.9
 
+If you still face issues, please check which Python and AWS CLI versions are compatible with LocalStack version 0.14.3.1.
+
 ## Key Implementation Details
 
 ### Reading Messages from the Queue
